@@ -1,9 +1,7 @@
 ---
-- include_tasks: setup-RedHat.yml
-  when: ( ansible_os_family == 'RedHat' or ansible_pkg_mgr == "dnf" or ansible_pkg_mgr == "yum" )
-
-- include_tasks: setup-Debian.yml
-  when: (ansible_distribution == "Debian")
-
-- include_tasks: setup-Ubuntu.yml
-  when: (ansible_distribution == "Ubuntu")
+- name: Copy file with permissions
+  ansible.builtin.copy:
+    src: "{{ src_location }}"
+    dest: "{{ dest_location }}"
+    mode: '0644'
+    remote_src: "{{ remote_src }}"

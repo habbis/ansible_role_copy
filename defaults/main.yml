@@ -1,2 +1,6 @@
 ---
 # variables
+src_location:
+dest_location:
+# if remote yes if not put no
+remote_src: no 
