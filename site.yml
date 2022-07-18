@@ -13,6 +13,5 @@
     #-  defaults/secrets.yml
 
   roles:
-    #- { role: ../ansible_role_copy }
-    - { role: ansible_role_copy }
+    - { role: ../ansible_role_copy }
 
