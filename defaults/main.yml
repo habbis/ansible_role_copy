@@ -1,6 +1,6 @@
 ---
 # variables
-src_location:
-dest_location:
+src_location: /root/path
+dest_location: /root/path
 # if remote yes if not put no
-remote_src: no 
+remote_src: no
