@@ -1,6 +1,6 @@
 ---
 - name: copy ssl
-  gather_facts: true
+  gather_facts: yes
   remote_user: root
   #remote_user: ansible
   #become: yes
